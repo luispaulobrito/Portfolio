@@ -1,0 +1,15 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+a{
+    color: #48729d;
+    padding-right: 20px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
