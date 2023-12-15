@@ -1,4 +1,5 @@
 @import "../../app/theme/styles/theme.scss";
+@import "../../app/theme/styles/mixins.scss";
 
 .background{
     display: flex;
@@ -27,8 +28,31 @@ p{
     margin: 0;
     font-family: "Inter";
     color: #1f2435;
+
+    @include responsive(md) {
+        font-size: 40px;
+    }
+
 }
 
 .cargo{
+    color: #1f2435;
+    
+    @include responsive(md) {
+        font-size: 15px;
+    }
+}
+
+.social-medias{
+    display: flex;
+    align-items: center;
+}
+
+.social-media i{
+    font-size: 24px;
+    width: 40px;
+    color: #2b459d
+}
+.social-media i:hover{
     color: #1f2435;
 }

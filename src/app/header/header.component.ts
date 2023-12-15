@@ -6,7 +6,26 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  
+  scrolled = false;
+  isMenuOpen = false;
+
+  toggleMenu(): void{
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  /**
+   * Altera a cor do menu com base na posição de rolagem atualizando a propriedade 'scrolled'
+   */
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollPosition =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
+    this.scrolled = scrollPosition > 50;
+  }
+
   /**
    * Role a página suavemente até a seção especificada pelo ID.
    *
@@ -18,16 +37,5 @@ export class HeaderComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
-
-  scrolled = false;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    // Verifica a posição de rolagem
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-    // Define a condição para a mudança de cor
-    this.scrolled = scrollPosition > 50; // por exemplo, mude a cor após rolar 50 pixels
   }
 }

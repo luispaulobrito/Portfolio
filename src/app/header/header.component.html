@@ -1,9 +1,65 @@
-<div class="nav" [ngClass]="{'scrolled': scrolled}">
-  <ul>
-    <li (click)="scrollToSection('home')" (keydown.enter)="scrollToSection('home')" (keydown.space)="scrollToSection('home')" role="button" tabindex="0" routerLink="/home" routerLinkActive="active">Home</li>
-    <li (click)="scrollToSection('about')" (keydown.enter)="scrollToSection('about')" (keydown.space)="scrollToSection('about')" role="button" tabindex="0">Sobre</li>
-    <li (click)="scrollToSection('skills')" (keydown.enter)="scrollToSection('skills')" (keydown.space)="scrollToSection('skills')" role="button" tabindex="0">Habilidades</li>
-    <li (click)="scrollToSection('resume')" (keydown.enter)="scrollToSection('resume')" (keydown.space)="scrollToSection('resume')" role="button" tabindex="0">Currículo</li>
-    <li (click)="scrollToSection('portfolio')" (keydown.enter)="scrollToSection('portfolio')" (keydown.space)="scrollToSection('portfolio')" role="button" tabindex="0">Portifólio</li>
-  </ul>
+<div class="nav" [ngClass]="{ scrolled: scrolled }">
+  <div>
+    <div class="toggle">
+      <button
+      class="burguer"
+      (click)="toggleMenu()"
+      (keydown.enter)="toggleMenu()"
+      (keydown.space)="toggleMenu()"
+      tabindex="0"
+      >
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </button>
+  
+    <ul class="menu" [class.is-open]="isMenuOpen">
+      <li
+        (click)="scrollToSection('home')"
+        (keydown.enter)="scrollToSection('home')"
+        (keydown.space)="scrollToSection('home')"
+        role="button"
+        tabindex="0"
+        routerLink="/home"
+        routerLinkActive="active"
+      >
+        Home
+      </li>
+      <li
+        (click)="scrollToSection('about')"
+        (keydown.enter)="scrollToSection('about')"
+        (keydown.space)="scrollToSection('about')"
+        role="button"
+        tabindex="0"
+      >
+        Sobre
+      </li>
+      <li
+        (click)="scrollToSection('skills')"
+        (keydown.enter)="scrollToSection('skills')"
+        (keydown.space)="scrollToSection('skills')"
+        role="button"
+        tabindex="0"
+      >
+        Habilidades
+      </li>
+      <li
+        (click)="scrollToSection('resume')"
+        (keydown.enter)="scrollToSection('resume')"
+        (keydown.space)="scrollToSection('resume')"
+        role="button"
+        tabindex="0"
+      >
+        Currículo
+      </li>
+      <li
+        (click)="scrollToSection('portfolio')"
+        (keydown.enter)="scrollToSection('portfolio')"
+        (keydown.space)="scrollToSection('portfolio')"
+        role="button"
+        tabindex="0"
+      >
+        Portifólio
+      </li>
+    </ul>
+  </div>
+  </div>
 </div>
