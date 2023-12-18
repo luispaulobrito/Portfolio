@@ -1,18 +1,17 @@
 @import "../../app/theme/styles/mixins.scss";
 
-.skills {
+.portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 40rem;
-  background-color: #9d9deb;
 
   @include responsive(sm) {
     height: 50rem;
   }
 }
 
-.skills h2 {
+.portfolio h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
