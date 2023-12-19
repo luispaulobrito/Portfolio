@@ -2,8 +2,8 @@
 
 .nav {
   padding: 10px 4%;
-  background-color: transparent;
 }
+
 .scrolled {
   background-color: white;
 }
@@ -35,6 +35,10 @@
   }
 }
 
+i{
+  color: black;
+}
+
 .toggle{
   display: flex;
   flex-direction: row;
@@ -43,7 +47,7 @@
 }
 
 li {
-  color: #000000;
+  color: black;
   padding-right: 30px;
   padding-bottom: 10px;
   font-family: "Inter";
@@ -59,7 +63,7 @@ li::after{
   content: " ";
   width: 0%;
   height: 4px;
-  background-color: #000000;
+  background-color: black;
   position: absolute;
   bottom: 0;
   left: 0;

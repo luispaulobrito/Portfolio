@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 40rem;
-  background-color: #9d9deb;
-
+  height: 50rem;
+  background-color: #00000829;
   @include responsive(sm) {
     height: 50rem;
   }
@@ -18,11 +17,6 @@
   align-items: center;
   font-size: 3rem;
   padding-bottom: 4rem;
-}
-
-p{
-    display: flex;
-    align-items: center;
 }
 
 i{
@@ -39,4 +33,38 @@ i{
   @include responsive(sm) {
     font-size: 1rem;
   }
+}
+
+h3{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+p{
+  font-size: 1rem;
+}
+
+.language{
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.language p, img{
+  padding-right: 0.5rem;
+}
+
+.language .name{
+  font-weight: 600;
+}
+
+.language .level{
+  font-style: italic;
+}
+
+.course{
+  padding-bottom: 1rem;
+}
+
+.experience{
+  padding-bottom: 1rem;
 }
