@@ -6,8 +6,8 @@
   justify-content: center;
   height: 60rem;
   background-color: #00000829;
-  @include responsive(sm) {
-    height: 50rem;
+  @include responsive(md) {
+    height: 120rem;
   }
 }
 
@@ -30,7 +30,10 @@ i {
   justify-content: space-evenly;
   font-size: 1.3rem;
 
-  @include responsive(sm) {
+  @include responsive(md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1rem;
   }
 }
@@ -72,6 +75,11 @@ img {
   justify-content: center;
   padding: 0.4rem 0;
   background-color: aliceblue;
+  width: 19rem;
+  
+  @include responsive(1024px) {
+    width: 12rem;
+  }
 }
 
 .experience,
@@ -79,5 +87,8 @@ img {
   display: flex;
   padding-bottom: 1rem;
   align-items: flex-start;
-  width: 17rem;
+  max-width: 19rem;
+  @include responsive(1024px) {
+    width: 12rem;
+  }
 }
