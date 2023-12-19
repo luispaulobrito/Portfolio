@@ -15,15 +15,20 @@ export class ResumeComponent {
       year: '2007-2012',
     },
     {
-      name: 'Licenciatura em Computação',
-      institution: 'Universidade Estadual da Paraíba',
-      year: '2007-2012',
+      name: 'MBA em Gestão de Marketing Digital',
+      institution: 'Faculdade Dom Bosco',
+      year: '2016-2017',
     },
     {
-      name: 'Licenciatura em Computação',
-      institution: 'Universidade Estadual da Paraíba',
-      year: '2007-2012',
+      name: 'Pós-Graduação em Gestão de Tecnologia da Informação',
+      institution: '•	Faculdade Focus',
+      year: '2021-2022',
     },
+    {
+      name: 'Técnico em Desenvolvimento de Sistemas',
+      institution: 'Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais',
+      year: '2022-2023',
+    }
   ];
   languages: Array<Language> = [
     {

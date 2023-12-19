@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50rem;
+  height: 60rem;
   background-color: #00000829;
   @include responsive(sm) {
     height: 50rem;
@@ -19,10 +19,10 @@
   padding-bottom: 4rem;
 }
 
-i{
-    font-size: 13px;
-    color: #044d8d;
-    padding-right: 5px;
+i {
+  font-size: 16px;
+  color: #070707;
+  padding-right: 8px;
 }
 
 .content {
@@ -35,36 +35,49 @@ i{
   }
 }
 
-h3{
+h3 {
   font-size: 1.4rem;
   font-weight: 600;
 }
 
-p{
+p {
   font-size: 1rem;
 }
 
-.language{
+.language {
   display: flex;
   padding-bottom: 1rem;
 }
 
-.language p, img{
+.language p,
+img {
   padding-right: 0.5rem;
 }
 
-.language .name{
+.language .name,
+.course .name,
+.experience .name {
   font-weight: 600;
 }
 
-.language .level{
+.language .level,
+.course .institution,
+.experience .institution {
   font-style: italic;
 }
 
-.course{
-  padding-bottom: 1rem;
+.course .year,
+.experience .year {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 0;
+  background-color: aliceblue;
 }
 
-.experience{
+.experience,
+.course {
+  display: flex;
   padding-bottom: 1rem;
+  align-items: flex-start;
+  width: 17rem;
 }

@@ -5,26 +5,37 @@
       <div class="education">
         <h3>Educação</h3>
         <div class="course" *ngFor="let course of courses">
-            <p>{{ course.name }}</p>
-            <p>{{ course.institution }}</p>
-            <p>{{ course.year }}</p>
+          <i class="fa-solid fa-angle-right"></i>
+          <div>
+            <p class="name">{{ course.name }}</p>
+            <p class="institution">{{ course.institution }}</p>
+            <p class="year">{{ course.year }}</p>
+          </div>
         </div>
       </div>
       <div class="experiences">
         <h3>Experiências</h3>
         <div class="experience" *ngFor="let course of courses">
-            <p>{{ course.name }}</p>
-            <p>{{ course.institution }}</p>
-            <p>{{ course.year }}</p>
+          <i class="fa-solid fa-angle-right"></i>
+          <div>
+            <p class="name">{{ course.name }}</p>
+            <p class="institution">{{ course.institution }}</p>
+            <p class="year">{{ course.year }}</p>
+          </div>
         </div>
       </div>
       <div class="languages">
         <h3>Idiomas</h3>
         <div class="language" *ngFor="let language of languages">
-            <img src="{{ language.flag }}" alt="{{ language.name }} Flag" width="20" height="20">
-            <p class="name">{{ language.name }}</p>
-            <p> - </p>
-            <p class="level">{{ language.level }}</p>
+          <img
+            src="{{ language.flag }}"
+            alt="{{ language.name }} Flag"
+            width="20"
+            height="20"
+          />
+          <p class="name">{{ language.name }}</p>
+          <p>-</p>
+          <p class="level">{{ language.level }}</p>
         </div>
       </div>
     </div>
