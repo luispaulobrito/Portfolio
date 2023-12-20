@@ -1,6 +1,17 @@
 <div class="portfolio">
   <h2>Portfolio</h2>
   <div class="container-content">
-    <div class="content"></div>
+    <div class="portfolios" *ngFor="let portfolio of portfolios">
+      <div class="portfolio-content">
+        <img src="{{ portfolio.screen }}" alt="{{ portfolio.name }}">
+        <h3 class="name">{{ portfolio.name }}</h3>
+        <div class="description-container">
+          <p class="description">{{ portfolio.description }}</p>
+          <p class="github"><a href="{{ portfolio.github }}">🔗 Ver no Github</a></p>
+          <p class="page" *ngIf="portfolio.page"><a href="{{ portfolio.page }}">🔗 Ver Pàgina Web</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
