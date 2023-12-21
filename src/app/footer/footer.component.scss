@@ -18,6 +18,9 @@
   font-size: 1.3rem;
 
   @include responsive(sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1rem;
   }
 }
@@ -31,18 +34,30 @@
   font-size: 30px;
   width: 60px;
   color: #efeff0;
+  @include responsive(sm) {
+    display: flex;
+    justify-content: center;
+  }
 }
+
 .social-media i:hover {
   color: #1f2435;
   transition: 0.5s;
 }
 
-.elementor-widget-container{
+.elementor-widget-container {
   font-size: 12px;
   color: #efeff0;
   display: flex;
   align-items: center;
+  @include responsive(sm) {
+    margin-bottom: 1rem;
+  }
 }
-.elementor-widget-container p{
+.elementor-widget-container p {
   margin: 0;
+}
+
+a{
+  text-decoration: none;
 }
