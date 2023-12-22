@@ -9,6 +9,7 @@
   
   @include responsive(md) {
     background: url(../../../assets/images/header-mobile.png) no-repeat center center fixed;
-    // background-size: cover;
+    background-size:100%;
+    background-size: cover;
   }
 }
