@@ -8,7 +8,7 @@
   height: 40rem;
   
   @include responsive(md) {
-    background: url(../../../assets/images/header-mobile2.png) no-repeat center center fixed;
+    background: url(../../../assets/images/header-mobile.png) no-repeat center center fixed;
     background-size: cover;
   }
 }
